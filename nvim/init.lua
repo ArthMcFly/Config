@@ -3,5 +3,4 @@ require("arthur.core.options")
 require("arthur.core.keymaps")
 require("arthur.core.colorscheme")
 require("arthur.plugins.telescope")
-
-
+require("arthur.plugins.lsp")

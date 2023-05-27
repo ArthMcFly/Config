@@ -1,7 +1,8 @@
-vim.g.mapleader = "<D->"
+vim.g.mapleader = " "
 
 -- for conciseness
 local keymap = vim.keymap
+
 
 -- general keymaps
 keymap.set("n","<C-s>",":w<CR>")

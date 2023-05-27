@@ -29,7 +29,7 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 
 -- mouse
-opt.mouse = a
+opt.mouse = "a"
 
 -- miscellaneous
 opt.iskeyword:append("-")

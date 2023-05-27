@@ -26,7 +26,10 @@ if not status then
 	return
 end
 return packer.startup(function(use) 
--- list your plugins here
+-- list your plugins here 
+
+
+
 	use("wbthomason/packer.nvim") -- package manager
 	use("ErichDonGubler/vim-sublime-monokai") -- colorscheme
 	use("ap/vim-css-color") -- css colors visualizer
@@ -42,11 +45,10 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua library
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
   	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
-	-- use("ervandew/supertab") -- tab autocompletion	
-	-- use {'neoclide/coc.nvim', branch = 'release'} -- CoC completion
 	use ('mbbill/undotree') -- undotree
 
-		-- lsp-zero install
+
+	-- lsp-zero install 
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -69,6 +71,10 @@ return packer.startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+
+
+
+-- list your plugins here 
 	if packer_boostrap then
 		require("packer").sync()
 	end

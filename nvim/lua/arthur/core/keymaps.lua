@@ -3,7 +3,6 @@ vim.g.mapleader = "<D->"
 -- for conciseness
 local keymap = vim.keymap
 
-
 -- general keymaps
 keymap.set("n","<C-s>",":w<CR>")
 keymap.set("n","<C-x>",":q<CR>")
@@ -15,3 +14,6 @@ keymap.set("n","<C-right>",":tabnext<CR>")
 
 -- telescope keymaps
 keymap.set("n", "<C-f>", "<cmd>Telescope find_files<cr>")
+
+-- undotree keymaps 
+keymap.set("n","<C-u>",":UndotreeToggle<cr>")

@@ -4,6 +4,8 @@ function ExecuteOnSave()
 	vim.api.nvim_command("normal ggVG")
 	-- indent the file 
 	vim.api.nvim_command("normal =")
+	-- save the file
+	vim.api.nvim_command("w")
 end
 
 -- maps the BufWritePost event to call the function ExecuteOnSave()

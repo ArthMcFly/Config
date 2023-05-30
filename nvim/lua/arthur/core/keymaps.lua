@@ -11,6 +11,7 @@ keymap.set("n","<C-t>",":NERDTreeToggle<CR>")
 keymap.set("n","<C-n>",":tabnew<CR>")
 keymap.set("n","<C-left>",":tabprevious<CR>")
 keymap.set("n","<C-right>",":tabnext<CR>")
+keymap.set("n","<C-a>",":normal! ggVG<CR>")
 
 
 -- telescope keymaps

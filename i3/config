@@ -11,6 +11,9 @@
 
 set $mod Mod4
 set $alt Mod1
+set $menu rofi run -show drun -run-shell-command '{terminal} -e zsh -ic "{cmd} && read"'
+set $power_menu rofi -show power-menu -modi power-menu:rofi-power-menu
+set $window_menu  rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -64,13 +67,15 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start the program launcher
-bindsym $mod+d exec rofi run -show drun -run-shell-command '{terminal} -e zsh -ic "{cmd} && read"'
+bindsym $mod+d exec $menu 
+
+# rofi run -show drun -run-shell-command '{terminal} -e zsh -ic "{cmd} && read"'
 
 #start de rofi window mode
-bindsym $mod+Tab exec rofi -show window
+bindsym $mod+Tab exec $window_menu
 
 #start the rofi power menu
-bindsym $alt+F4 exec rofi -show power-menu -modi power-menu:rofi-power-menu
+bindsym $alt+F4 exec $power_menu
 
 #start the screenshot saver
 bindsym $mod+p exec "flameshot gui"

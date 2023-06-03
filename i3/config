@@ -236,7 +236,17 @@ bindsym $mod+r mode "resize"
 bar {
 	status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks
 		font xft:Hack Nerd Font, FontAwesome 8
+		colors {
+			background #000000
+				statusline #ffffff
+				separator #666666
+
+				focused_workspace  #696969 #222222 #ffffff
+				active_workspace   #333333 #5f676a #ffffff
+				inactive_workspace #333333 #222222 #888888
+				urgent_workspace   #2f343a #900000 #ffffff
+				binding_mode       #2f343a #900000 #ffffff
+		}
+
 } 
 exec --no-startup-id nitrogen --restore
-
-

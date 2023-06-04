@@ -11,7 +11,6 @@ First you have to clone this repo (is recommended to clone into your home direct
 	```bash
 	ln -s path/of/directory ~/.config/ 
 	```
-	---
 
 
-#  Nvim config
+# :man: Nvim config

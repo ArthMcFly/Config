@@ -1,4 +1,4 @@
-# Usage
+# :computer: Usage
 First you have to clone this repo (is recommended to clone into your home directory)
 
 	cd ~
@@ -13,4 +13,4 @@ Usually you would just move the files, but the ideal way is creating a soft link
 
 
 
-# :computer: Nvim config
+

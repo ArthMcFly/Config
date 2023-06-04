@@ -98,3 +98,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 source ~/.zsh_aliases
+
+
+
+nerdfetch

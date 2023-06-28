@@ -41,7 +41,10 @@ return packer.startup(function(use)
 	use("elzr/vim-json") --json highlitghing
 	use("lukas-reineke/indent-blankline.nvim") -- indentation 
 	use("nanozuki/tabby.nvim") -- multi-tab nvim
-	use("jiangmiao/auto-pairs") -- pairs autocompletion
+	use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+} -- pairs autocompletion
 	use("nvim-lua/plenary.nvim") -- lua library
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder

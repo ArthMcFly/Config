@@ -105,4 +105,4 @@ source ~/.zsh_aliases
 nerdfetch
 
 
-if [ -z $TMUX ]; then; tmux; fi
+

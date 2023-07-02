@@ -31,7 +31,6 @@ return packer.startup(function(use)
 
 
 	use("wbthomason/packer.nvim") -- package manager
-	use("ErichDonGubler/vim-sublime-monokai") -- colorscheme
 	use("ap/vim-css-color") -- css colors visualizer
 	use("ryanoasis/vim-devicons") -- icons for files
 	use("vim-airline/vim-airline") -- bottom bar

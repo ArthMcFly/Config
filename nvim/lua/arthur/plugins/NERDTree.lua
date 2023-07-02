@@ -1,3 +1,3 @@
 vim.g.NERDTreeShowHidden = 1
-vim.cmd('autocmd VimEnter * NERDTree')
+--vim.cmd('autocmd VimEnter * NERDTree')
 

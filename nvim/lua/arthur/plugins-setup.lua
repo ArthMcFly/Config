@@ -41,10 +41,13 @@ return packer.startup(function(use)
 	use("elzr/vim-json") --json highlitghing
 	use("lukas-reineke/indent-blankline.nvim") -- indentation 
 	use("nanozuki/tabby.nvim") -- multi-tab nvim
+
+
+	-- pairs autocompletion
 	use {
-	"windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-} -- pairs autocompletion
+		"windwp/nvim-autopairs",
+		config = function() require("nvim-autopairs").setup {} end
+	} 
 	use("nvim-lua/plenary.nvim") -- lua library
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
@@ -74,6 +77,15 @@ return packer.startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
+
+	-- list your colorschemes here 
+
+
+	use("ErichDonGubler/vim-sublime-monokai") -- monokai
+	use("https://github.com/morhetz/gruvbox") -- gruvbox
+
+
+	-- list your colorschemes here 
 
 
 

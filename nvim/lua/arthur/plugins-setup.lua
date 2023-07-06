@@ -81,11 +81,14 @@ return packer.startup(function(use)
 
 
 	use("ErichDonGubler/vim-sublime-monokai") -- monokai
-	use("https://github.com/morhetz/gruvbox") -- gruvbox
-
+	use("morhetz/gruvbox") -- gruvbox
+	use("sainnhe/gruvbox-material") -- gruvbox-material
 
 	-- list your colorschemes here 
 
+	-- NERDTree plugins
+	use("tiagofumo/vim-nerdtree-syntax-highlight") -- syntax highlight
+	use("Xuyuanp/nerdtree-git-plugin") -- git integration
 
 
 	-- list your plugins here 

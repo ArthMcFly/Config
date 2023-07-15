@@ -35,12 +35,9 @@ return packer.startup(function(use)
 	use("ryanoasis/vim-devicons") -- icons for files
 	use("vim-airline/vim-airline") -- bottom bar
 	use("preservim/nerdtree") -- tree file manager
-	use("pangloss/vim-javascript") -- javascript indentation
-	use("MaxMEllon/vim-jsx-pretty") --syntax highlighting
-	use("elzr/vim-json") --json highlitghing
 	use("lukas-reineke/indent-blankline.nvim") -- indentation 
 	use("nanozuki/tabby.nvim") -- multi-tab nvim
-
+	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- syntax highlighting
 
 	-- pairs autocompletion
 	use {

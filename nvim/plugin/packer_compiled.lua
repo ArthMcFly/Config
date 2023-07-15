@@ -165,6 +165,11 @@ _G.packer_plugins = {
     path = "/home/arthur/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/arthur/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/arthur/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -209,21 +214,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arthur/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["vim-javascript"] = {
-    loaded = true,
-    path = "/home/arthur/.local/share/nvim/site/pack/packer/start/vim-javascript",
-    url = "https://github.com/pangloss/vim-javascript"
-  },
-  ["vim-json"] = {
-    loaded = true,
-    path = "/home/arthur/.local/share/nvim/site/pack/packer/start/vim-json",
-    url = "https://github.com/elzr/vim-json"
-  },
-  ["vim-jsx-pretty"] = {
-    loaded = true,
-    path = "/home/arthur/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
-    url = "https://github.com/MaxMEllon/vim-jsx-pretty"
   },
   ["vim-nerdtree-syntax-highlight"] = {
     loaded = true,

@@ -33,63 +33,67 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- package manager
 	use("ap/vim-css-color") -- css colors visualizer
 	use("ryanoasis/vim-devicons") -- icons for files
-	use("vim-airline/vim-airline") -- bottom bar
-	use("preservim/nerdtree") -- tree file manager
-	use("lukas-reineke/indent-blankline.nvim") -- indentation 
-	use("nanozuki/tabby.nvim") -- multi-tab nvim
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- syntax highlighting
+	use {                          -- status line
+	'nvim-lualine/lualine.nvim',
+	requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
+use("preservim/nerdtree") -- tree file manager
+use("lukas-reineke/indent-blankline.nvim") -- indentation 
+use("nanozuki/tabby.nvim") -- multi-tab nvim
+use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- syntax highlighting
 
-	-- pairs autocompletion
-	use {
-		"windwp/nvim-autopairs",
-		config = function() require("nvim-autopairs").setup {} end
-	} 
-	use("nvim-lua/plenary.nvim") -- lua library
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
-	use ('mbbill/undotree') -- undotree
+-- pairs autocompletion
+use {
+	"windwp/nvim-autopairs",
+	config = function() require("nvim-autopairs").setup {} end
+} 
+use("nvim-lua/plenary.nvim") -- lua library
+use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+use ('mbbill/undotree') -- undotree
 
 
-	-- lsp-zero install 
-	use {
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v1.x',
-		requires = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
+-- lsp-zero install 
+use {
+	'VonHeikemen/lsp-zero.nvim',
+	branch = 'v1.x',
+	requires = {
+		-- LSP Support
+		{'neovim/nvim-lspconfig'},
+		{'williamboman/mason.nvim'},
+		{'williamboman/mason-lspconfig.nvim'},
 
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'saadparwaiz1/cmp_luasnip'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-nvim-lua'},
+		-- Autocompletion
+		{'hrsh7th/nvim-cmp'},
+		{'hrsh7th/cmp-buffer'},
+		{'hrsh7th/cmp-path'},
+		{'saadparwaiz1/cmp_luasnip'},
+		{'hrsh7th/cmp-nvim-lsp'},
+		{'hrsh7th/cmp-nvim-lua'},
 
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},
-			{'rafamadriz/friendly-snippets'},
-		}
+		-- Snippets
+		{'L3MON4D3/LuaSnip'},
+		{'rafamadriz/friendly-snippets'},
 	}
+}
 
-	-- list your colorschemes here 
+-- list your colorschemes here 
+
+use({ 'rose-pine/neovim', as = 'rose-pine' }) -- rose-pine
+use("ErichDonGubler/vim-sublime-monokai") -- monokai
+use('eddyekofo94/gruvbox-flat.nvim') -- gruvbox-flat
+use("morhetz/gruvbox") -- gruvbox
+use("sainnhe/gruvbox-material") -- gruvbox-material
+
+-- list your colorschemes here 
+
+-- NERDTree plugins
+use("tiagofumo/vim-nerdtree-syntax-highlight") -- syntax highlight
+use("Xuyuanp/nerdtree-git-plugin") -- git integration
 
 
-	use("ErichDonGubler/vim-sublime-monokai") -- monokai
-	use("morhetz/gruvbox") -- gruvbox
-	use("sainnhe/gruvbox-material") -- gruvbox-material
-
-	-- list your colorschemes here 
-
-	-- NERDTree plugins
-	use("tiagofumo/vim-nerdtree-syntax-highlight") -- syntax highlight
-	use("Xuyuanp/nerdtree-git-plugin") -- git integration
-
-
-	-- list your plugins here 
-	if packer_boostrap then
-		require("packer").sync()
-	end
+-- list your plugins here 
+if packer_boostrap then
+	require("packer").sync()
+end
 end)

@@ -1,16 +1,20 @@
-vim.g.NERDTreeShowHidden = 1
---vim.cmd('autocmd VimEnter * NERDTree')
+local success, error = pcall(function()
+	vim.g.NERDTreeShowHidden = 1
+	vim.g.NERDTreeGitStatusIndicatorMapCustom = {
+		Modified  = "✹",
+		Staged    = "✚",
+		Untracked = "✭",
+		Renamed   = "➜",
+		Unmerged  = "═",
+		Deleted   = "✖",
+		Dirty     = "✗",
+		Clean     = "✔︎",
+		Ignored   = '☒',
+		Unknown   = "?"
+	}
+end)
 
-vim.g.NERDTreeGitStatusIndicatorMapCustom = {
-	Modified  = "✹",
-	Staged    = "✚",
-	Untracked = "✭",
-	Renamed   = "➜",
-	Unmerged  = "═",
-	Deleted   = "✖",
-	Dirty     = "✗",
-	Clean     = "✔︎",
-	Ignored   = '☒',
-	Unknown   = "?"
-}
+if not success then
+	print("Error: " .. error)
+end
 

@@ -2,9 +2,9 @@ lastupdatecheck: 0
 recentrepos:
 - /home/arthur/config_files
 - /home/arthur/git-practice
-- /home/arthur/programming/git-practice
 - /home/arthur/programming/Tcc/backend
 - /home/arthur/programming/Tcc/frontend
+- /home/arthur/programming/git-practice
 startuppopupversion: 5
 customcommandshistory: []
 hidecommandlog: true

@@ -12,7 +12,7 @@ keymap.set("n","<C-n>",":tabnew<CR>")
 keymap.set("n","<C-left>",":tabprevious<CR>")
 keymap.set("n","<C-right>",":tabnext<CR>")
 keymap.set("n","<C-a>",":normal! ggVG<CR>")
-
+keymap.set("n","<F5>",":!make<CR>")
 
 -- telescope keymaps
 keymap.set("n", "<C-f>", "<cmd>Telescope find_files<cr>")

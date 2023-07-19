@@ -4,7 +4,7 @@ local opt = vim.opt -- fot conciseness
 opt.number = true
 
 -- tab & indentation
-opt.tabstop = 4 
+opt.tabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
 

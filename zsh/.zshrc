@@ -71,7 +71,15 @@ ZSH_THEME="minimal"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo aliases colored-man-pages themes zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(
+	git 
+	sudo 
+	aliases 
+	colored-man-pages 
+	themes zsh-autosuggestions 
+	zsh-syntax-highlighting 
+	copyfile
+)
 
 source $ZSH/oh-my-zsh.sh
 

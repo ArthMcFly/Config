@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/config_files/zsh/zsh_aliases
 
 
-nerdfetch
+
 
 
 

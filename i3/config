@@ -14,6 +14,9 @@ set $alt Mod1
 set $menu rofi run -show drun -run-shell-command '{terminal} -e zsh -ic "{cmd} && read"'
 set $power_menu rofi -show power-menu -modi power-menu:rofi-power-menu
 set $window_menu  rofi -show window
+set $theme_selector ~/config_files/rofi/scripts/rofi-theme-selector
+set $terminal kitty 
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -61,7 +64,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec $terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -76,6 +79,9 @@ bindsym $mod+Tab exec $window_menu
 
 #start the rofi power menu
 bindsym $alt+F4 exec $power_menu
+
+#start the rofi theme selector
+bindsym $mod+t exec $theme_selector
 
 #start the screenshot saver
 bindsym $mod+p exec "flameshot gui"

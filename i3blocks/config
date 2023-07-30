@@ -106,16 +106,21 @@ interval=10
 # The battery instance defaults to 0.
 [battery]
 command=$SCRIPT_DIR/battery/battery
-# label=BAT
 label=
 interval=10
 
-# Date Time
+# Date 
 #
 [time]
 label=📅
-command=date '+%d/%m/%Y | ⏱️ %H:%M'
-#command=date '%H:%M'
+command=date '+%d/%m/%y'
+interval=1
+
+# Time 
+#
+[time]
+label=⏱️ 
+command=date '+%H:%M'
 interval=1
 
 # Generic media player support

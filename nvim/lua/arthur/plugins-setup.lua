@@ -25,11 +25,10 @@ local status, packer = pcall(require, "packer")
 if not status then
 	return
 end
-return packer.startup(function(use) 
+return packer.startup(function(use)
 	-- list your plugins here 
 
-
-
+	use("kqito/vim-easy-replace") -- search and replace
 	use("wbthomason/packer.nvim") -- package manager
 	use("ap/vim-css-color") -- css colors visualizer
 	use("ryanoasis/vim-devicons") -- icons for files
@@ -46,7 +45,7 @@ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- syntax highlighti
 use {
 	"windwp/nvim-autopairs",
 	config = function() require("nvim-autopairs").setup {} end
-} 
+}
 use("nvim-lua/plenary.nvim") -- lua library
 use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder

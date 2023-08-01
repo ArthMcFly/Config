@@ -21,7 +21,7 @@ set $terminal kitty
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:Source Code Pro Medium 8
-font xft:Hack Nerd Font, FontAwesome 8
+font xft:Hack Nerd Font, FontAwesome 0
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -81,8 +81,10 @@ bindsym $mod+Tab exec $window_menu
 bindsym $alt+F4 exec $power_menu
 
 #start the rofi theme selector
-bindsym $mod+t exec $theme_selector
+bindsym $mod+Shift+t exec $theme_selector
 
+# Start the file manager 
+bindsym $mod+t exec Thunar
 #start the screenshot saver
 bindsym $mod+p exec "flameshot gui"
 

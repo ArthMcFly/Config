@@ -71,8 +71,9 @@ ZSH_THEME="minimal"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-source ~/config_files/zsh/zsh_plugins
-
+if [ -f ~/config_files/zsh/zsh_plugins  ]; then 
+	source ~/config_files/zsh/zsh_plugins
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,9 +107,16 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Aliases
-source ~/config_files/zsh/zsh_aliases
+if [ -f ~/config_files/zsh/zsh_aliases  ]; then 
+	source ~/config_files/zsh/zsh_aliases
+fi
 
-nerdfetch
+
+
+# Fetch initializer
+if [ -f /usr/bin/nerdfetch ]; then
+	nerdfetch
+fi
 
 
 

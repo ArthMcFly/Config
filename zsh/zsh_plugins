@@ -3,8 +3,8 @@ plugins=(
 	sudo 
 	aliases 
 	colored-man-pages 
-	themes zsh-autosuggestions 
+	themes 
+	zsh-autosuggestions 
 	zsh-syntax-highlighting 
-	copyfile
 )
 

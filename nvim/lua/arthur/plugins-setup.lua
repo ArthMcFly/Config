@@ -29,6 +29,7 @@ return packer.startup(function(use)
 	-- list your plugins here 
 
 	use("kqito/vim-easy-replace") -- search and replace
+	use("jose-elias-alvarez/null-ls.nvim") -- indentation 
 	use("wbthomason/packer.nvim") -- package manager
 	use("ap/vim-css-color") -- css colors visualizer
 	use("ryanoasis/vim-devicons") -- icons for files
@@ -40,6 +41,7 @@ use("preservim/nerdtree") -- tree file manager
 use("lukas-reineke/indent-blankline.nvim") -- indentation 
 use("nanozuki/tabby.nvim") -- multi-tab nvim
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) -- syntax highlighting
+
 
 -- pairs autocompletion
 use {

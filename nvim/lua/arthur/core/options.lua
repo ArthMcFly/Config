@@ -31,8 +31,5 @@ opt.clipboard:append("unnamedplus")
 -- mouse
 opt.mouse = "a"
 
--- supertab config
-vim.g.SuperTabDefaultCompletionType = "<c-n>"
-
 -- miscellaneous
 opt.iskeyword:append("-")

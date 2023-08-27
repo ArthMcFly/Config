@@ -77,6 +77,12 @@ source ~/config_files/zsh/zsh_plugins
 source $ZSH/oh-my-zsh.sh
 
 
+# New folder to $PATH 
+if [ -d ~/Bin ]; then
+    PATH=$PATH:~/Bin
+fi
+
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

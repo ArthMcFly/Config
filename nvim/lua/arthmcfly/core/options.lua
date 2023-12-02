@@ -25,11 +25,10 @@ opt.background = "dark"
 -- backspace 
 opt.backspace = "indent,eol,start"
 
--- clipboard
-opt.clipboard:append("unnamedplus")
-
 -- mouse
 opt.mouse = "a"
 
 -- miscellaneous
 opt.iskeyword:append("-")
+
+

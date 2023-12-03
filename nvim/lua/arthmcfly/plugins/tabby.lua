@@ -1,3 +1,4 @@
 return {
-	"nanozuki/tabby.nvim"
+	"nanozuki/tabby.nvim",
+	event = "VeryLazy",
 }

@@ -20,6 +20,8 @@ keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse fi
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 
 -- Custom keymaps
-
 keymap.set("n", "<leader>ww", ":w<CR>", { noremap = true, desc = "Save" })
 keymap.set("n", "<leader>wq", ":wq<CR>", { noremap = true, desc = "Save and quit" })
+keymap.set("n", "<leader>L", ":Lazy<CR>", { desc = "Lazy" })
+keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Quit" })
+keymap.set("n", "<leader>qQ", ":q!<CR>", { desc = "Quit without saving" })

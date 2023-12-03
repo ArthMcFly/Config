@@ -22,7 +22,7 @@ opt.cursorline = true
 opt.termguicolors = true
 opt.background = "dark"
 
--- backspace 
+-- backspace
 opt.backspace = "indent,eol,start"
 
 -- mouse
@@ -31,4 +31,5 @@ opt.mouse = "a"
 -- miscellaneous
 opt.iskeyword:append("-")
 
-
+vim.cmd("filetype on")
+vim.cmd("au BufRead,BufNewFile *.wiki set filetype=wiki")

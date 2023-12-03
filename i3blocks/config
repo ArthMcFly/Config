@@ -37,7 +37,7 @@ markup=none
 
 [volume]
 label=♪
-command=$SCRIPT_DIR/volume/volume
+# command=$SCRIPT_DIR/volume/volume
 # label=VOL
 interval=1
 signal=10
@@ -119,7 +119,7 @@ interval=60
 # Time 
 #
 [time]
-label=⏱️ 
+label=⏱️
 command=date '+%H:%M'
 interval=1
 

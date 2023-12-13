@@ -107,7 +107,7 @@ interval=10
 [battery]
 command=$SCRIPT_DIR/battery-poly/battery-poly
 label=
-interval=10
+interval=1
 
 # Date 
 #

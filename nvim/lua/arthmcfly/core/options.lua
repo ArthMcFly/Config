@@ -32,4 +32,4 @@ opt.mouse = "a"
 opt.iskeyword:append("-")
 
 vim.cmd("filetype on")
-vim.cmd("au BufRead,BufNewFile *.wiki set filetype=wiki")
+vim.cmd("au BufRead,BufNewFile *.norg set filetype=norg")

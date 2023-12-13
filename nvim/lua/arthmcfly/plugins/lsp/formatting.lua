@@ -8,6 +8,7 @@ return {
 			formatters_by_ft = {
 				c = { "clang_format" },
 				lua = { "stylua" },
+				shell = { "shellharden" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

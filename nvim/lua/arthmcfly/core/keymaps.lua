@@ -21,7 +21,8 @@ keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file
 
 -- Custom keymaps
 keymap.set("n", "<leader>ww", ":w<CR>", { noremap = true, desc = "Save" })
-keymap.set("n", "<leader>wq", ":wq<CR>", { noremap = true, desc = "Save and quit" })
-keymap.set("n", "<leader>L", ":Lazy<CR>", { desc = "Lazy" })
+keymap.set("n", "<leader>wq", ":x<CR>", { noremap = true, desc = "Save and quit" })
+keymap.set("n", "<leader>Ml", ":Lazy<CR>", { desc = "Lazy" })
+keymap.set("n", "<leader>Mm", ":Mason<CR>", { desc = "Mason" })
 keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Quit" })
 keymap.set("n", "<leader>qQ", ":q!<CR>", { desc = "Quit without saving" })

@@ -2,9 +2,6 @@ plugins=(
 	git 
 	sudo 
 	aliases 
-	colored-man-pages 
 	themes 
-	zsh-autosuggestions 
-	zsh-syntax-highlighting 
 )
 

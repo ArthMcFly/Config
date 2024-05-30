@@ -36,9 +36,9 @@ markup=none
 # See the script for details.
 
 [volume]
-label=♪
-# command=$SCRIPT_DIR/volume/volume
-# label=VOL
+label=♪ 
+command=$SCRIPT_DIR/volume/volume
+#label=VOL
 interval=1
 signal=10
 #STEP=5%
@@ -106,8 +106,8 @@ interval=10
 # The battery instance defaults to 0.
 [battery]
 command=$SCRIPT_DIR/battery-poly/battery-poly
-label=
-interval=1
+label=  
+interval=30
 
 # Date 
 #

@@ -13,17 +13,15 @@ set -e
 set -u
 
 # All supported choices
-all=(shutdown reboot suspend hibernate logout lockscreen)
+all=(shutdown reboot suspend logout)
 
 # By default, show all (i.e., just copy the array)
 show=("${all[@]}")
 
 declare -A texts
-texts[lockscreen]="lock screen"
 texts[switchuser]="switch user"
 texts[logout]="log out"
 texts[suspend]="suspend"
-texts[hibernate]="hibernate"
 texts[reboot]="reboot"
 texts[shutdown]="shut down"
 

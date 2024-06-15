@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 -- for conciseness
 local keymap = vim.keymap
+local api = vim.api
 
 -- Tabby keymaps
 vim.api.nvim_set_keymap("n", "<leader>ta", ":$tabnew<CR>", { noremap = true, desc = "New tab" })
@@ -26,3 +27,7 @@ keymap.set("n", "<leader>ml", ":Lazy<CR>", { desc = "Lazy" })
 keymap.set("n", "<leader>mm", ":Mason<CR>", { desc = "Mason" })
 keymap.set("n", "<leader>qq", ":q<CR>", { desc = "Quit" })
 keymap.set("n", "<leader>qQ", ":q!<CR>", { desc = "Quit without saving" })
+
+--Terminal emulator
+keymap.set("n", "<leader>p", ":ToggleTerm<CR>", { desc = "Open terminal" })
+api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", { noremap = true, silent = true })

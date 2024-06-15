@@ -1,7 +1,9 @@
-local opt = vim.opt -- fot conciseness
+local opt = vim.opt -- for conciseness
+local wo = vim.wo
 
 -- line numbers
 opt.number = true
+wo.relativenumber = true
 
 -- tab & indentation
 opt.tabstop = 4

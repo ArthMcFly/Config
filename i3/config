@@ -16,7 +16,7 @@ set $power_menu rofi -show power-menu -modi power-menu:rofi-power-menu
 set $window_menu  rofi -show window
 set $theme_selector ~/config_files/rofi/scripts/rofi-theme-selector
 set $terminal kitty 
-
+set $file_manager ranger
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -84,7 +84,9 @@ bindsym $alt+F4 exec $power_menu
 bindsym $mod+Shift+t exec $theme_selector
 
 # Start the file manager 
-bindsym $mod+t exec Thunar
+bindsym $mod+t exec $terminal -e $file_manager
+
+
 #start the screenshot saver
 bindsym $mod+p exec "flameshot gui"
 

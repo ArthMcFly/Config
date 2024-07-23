@@ -2,7 +2,7 @@
 First you have to clone this repo (is recommended to clone into your home directory)
 
 	cd ~
-	git clone https://github.com/ArthMcFly/config_files
+	git clone https://github.com/ArthMcFly/Config
 
 
 

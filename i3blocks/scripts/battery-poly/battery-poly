@@ -27,7 +27,7 @@ CURRENT_CHARGE_FILENAME = "energy_now"
 MAX_CHARGE_FILENAME = "energy_full"
 POWER_DRAW_FILENAME = "power_now"
 TLP_THRESHOLD_PERCENTAGE = 1.0
-PERCENTAGE_FORMAT = ".2%"
+PERCENTAGE_FORMAT = ".0%"
 
 if len(sys.argv) > 1:
     # parsing threshold

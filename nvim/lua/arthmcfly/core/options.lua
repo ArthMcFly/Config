@@ -3,7 +3,7 @@ local wo = vim.wo
 
 -- line numbers
 opt.number = true
-wo.relativenumber = true
+wo.relativenumber = false
 
 -- tab & indentation
 opt.tabstop = 4
@@ -35,3 +35,4 @@ opt.iskeyword:append("-")
 
 vim.cmd("filetype on")
 vim.cmd("au BufRead,BufNewFile *.norg set filetype=norg")
+vim.cmd("au BufRead,BufNewFile *.tex set filetype=tex")
